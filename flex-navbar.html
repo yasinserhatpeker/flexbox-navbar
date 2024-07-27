@@ -25,6 +25,7 @@
             color: #fff;
             font-size: 20px;
             text-decoration: none;
+            padding: 10px;
 
         }
         .navigation{
@@ -40,10 +41,16 @@
         .navigation a:hover{
             background-color: rgb(233,184,61);
 
+
+         }
+         .navigation li:last-child{
+            display: none;
          }
          @media (max-width: 600px) {
           nav{
             flex-direction: column;
+            position: relative;
+
           }
           .navigation{
             flex-direction: column;
@@ -57,7 +64,15 @@
             border-bottom: 1px solid rgba(0,0,0,0,1);
           }
             
+         
+         .navigation li:last-child{
+            display: block;
+            position: absolute;
+            top: 0%;
+            right: 10px;
          }
+         }
+        
         
     </style>
 </head>
